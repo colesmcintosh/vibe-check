@@ -4,11 +4,11 @@
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-A professional command-line tool that leverages Claude 4 (Sonnet) to perform comprehensive security analysis on your code. Get detailed security reports with actionable recommendations to improve your code's security posture.
+A professional command-line tool that leverages Claude 4 Sonnet to perform comprehensive security analysis on your code. Get detailed security reports with actionable recommendations to improve your code's security posture.
 
 ## ✨ Features
 
-- 🤖 **AI-Powered Analysis**: Uses Claude 4 (Sonnet) for intelligent security vulnerability detection
+- 🤖 **AI-Powered Analysis**: Uses Claude 4 Sonnet for intelligent security vulnerability detection
 - 📊 **Comprehensive Reports**: Generates detailed markdown reports with risk assessments
 - 🎯 **Multi-Language Support**: Analyzes 20+ programming languages
 - 🚀 **Professional CLI**: Beautiful, rich terminal interface with progress indicators
