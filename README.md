@@ -1,4 +1,4 @@
-# 🔍 Vibe Security AI - AI-Powered Security Analysis CLI
+# Vibe Security AI - AI-Powered Security Analysis CLI
 
 [![PyPI version](https://badge.fury.io/py/vibe-security-ai.svg)](https://badge.fury.io/py/vibe-security-ai)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
@@ -6,18 +6,18 @@
 
 A professional command-line tool that leverages Claude 4 Sonnet to perform comprehensive security analysis on your code. Get detailed security reports with actionable recommendations to improve your code's security posture.
 
-## ✨ Features
+## Features
 
-- 🤖 **AI-Powered Analysis**: Uses Claude 4 Sonnet for intelligent security vulnerability detection
-- 📊 **Comprehensive Reports**: Generates detailed markdown reports with risk assessments
-- 🎯 **Multi-Language Support**: Analyzes 20+ programming languages
-- 🚀 **Professional CLI**: Beautiful, rich terminal interface with progress indicators
-- ⚡ **Fast & Efficient**: Quick analysis with detailed feedback
-- 🔧 **Flexible Output**: Custom output paths and automatic naming
-- 📋 **Structured Analysis**: Executive summaries, detailed findings, and remediation roadmaps
-- 🔒 **Privacy-Focused**: Local report generation with secure API communication
+- **AI-Powered Analysis**: Uses Claude 4 Sonnet for intelligent security vulnerability detection
+- **Comprehensive Reports**: Generates detailed markdown reports with risk assessments
+- **Multi-Language Support**: Analyzes 20+ programming languages
+- **Professional CLI**: Beautiful, rich terminal interface with progress indicators
+- **Fast & Efficient**: Quick analysis with detailed feedback
+- **Flexible Output**: Custom output paths and automatic naming
+- **Structured Analysis**: Executive summaries, detailed findings, and remediation roadmaps
+- **Privacy-Focused**: Local report generation with secure API communication
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -41,7 +41,7 @@ vibe-security-ai path/to/your/code.py
 
 That's it! Your security report will be generated in the `security_reports/` folder.
 
-## 📦 Installation Options
+## Installation Options
 
 ### Option 1: PyPI (Recommended)
 ```bash
@@ -55,7 +55,7 @@ cd vibe-check
 pip install -e .
 ```
 
-## ⚙️ Configuration
+## Configuration
 
 ### API Key Setup
 
@@ -76,7 +76,7 @@ export ANTHROPIC_API_KEY="your_api_key_here"
 echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
 ```
 
-## 🎯 Usage
+## Usage
 
 ### Basic Commands
 
@@ -117,7 +117,7 @@ vibe-security-ai models/user.sql
 vibe-security-ai scripts/deploy.sh
 ```
 
-## 🔧 Supported Languages
+## Supported Languages
 
 Vibe Security AI analyzes these file types:
 
@@ -131,34 +131,34 @@ Vibe Security AI analyzes these file types:
 
 *Note: Any text file can be analyzed, with confirmation for unrecognized extensions.*
 
-## 📊 Report Structure
+## Report Structure
 
 Each security analysis includes:
 
-### 📋 Executive Summary
+### Executive Summary
 - Overall security posture assessment
 - Risk level classification (Critical/High/Medium/Low)
 - Summary of findings by severity
 
-### 🔍 Detailed Security Findings
+### Detailed Security Findings
 
-**Critical Issues** 🚨
+**Critical Issues**
 - Immediate security threats requiring urgent attention
 - Potential for data breaches or system compromise
 
-**High Priority** ⚠️
+**High Priority**
 - Important vulnerabilities to address soon
 - Significant security risks
 
-**Medium Priority** 📝
+**Medium Priority**
 - Issues for next development cycle
 - Security improvements and hardening
 
-**Low Priority** 💡
+**Low Priority**
 - Best practice recommendations
 - Code quality and maintainability improvements
 
-### 📊 Analysis Details
+### Analysis Details
 For each finding:
 - Clear vulnerability description
 - Exact code location (file and line numbers)
@@ -166,28 +166,28 @@ For each finding:
 - Step-by-step remediation instructions
 - Code examples showing fixes
 
-### ✅ Security Recommendations
+### Security Recommendations
 - Industry best practices
 - Prevention strategies
 - Compliance considerations (OWASP, CWE)
 - Prioritized action plan
 
-## 🖥️ CLI Output Examples
+## CLI Output Examples
 
 ### Successful Analysis
 ```
-🔍 VIBE SECURITY AI
+VIBE SECURITY AI
 Security Analysis Tool powered by Claude 4
 
-📁 Analyzing: src/auth/login.py
-📄 Report will be saved to: security_reports/login_security_report.md
+Analyzing: src/auth/login.py
+Report will be saved to: security_reports/login_security_report.md
 
-🔎 Analyzing code for security vulnerabilities...
+Analyzing code for security vulnerabilities...
 
-✅ Analysis complete!
-📊 Security report saved to: security_reports/login_security_report.md
-⏱️  Analysis took: 2.34 seconds
-🔍 Found: 2 Critical, 1 High, 3 Medium, 2 Low priority issues
+Analysis complete!
+Security report saved to: security_reports/login_security_report.md
+Analysis took: 2.34 seconds
+Found: 2 Critical, 1 High, 3 Medium, 2 Low priority issues
 ```
 
 ### Sample Report Header
@@ -203,17 +203,17 @@ Security Analysis Tool powered by Claude 4
 
 ## 🎯 Executive Summary
 
-**Security Posture:** HIGH RISK ⚠️
+**Security Posture:** HIGH RISK
 **Total Issues Found:** 8
-- 🚨 Critical: 2
-- ⚠️ High: 1  
-- 📝 Medium: 3
-- 💡 Low: 2
+- Critical: 2
+- High: 1  
+- Medium: 3
+- Low: 2
 
 This analysis identified several critical security vulnerabilities...
 ```
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 ### Common Issues
 
@@ -237,7 +237,7 @@ vibe-security-ai --version
 vibe-security-ai --setup
 ```
 
-## 🏗️ Development
+## Development
 
 ### Project Structure
 ```
@@ -274,7 +274,7 @@ python test_package.py
 python -m build
 ```
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 - **Secure Communication**: All API calls use HTTPS encryption
 - **No Data Storage**: Your code is not stored by the tool or Anthropic
@@ -282,20 +282,20 @@ python -m build
 - **API Privacy**: Review [Anthropic's Privacy Policy](https://www.anthropic.com/privacy) for API data handling
 - **Open Source**: Full source code available for security review
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Here are some areas for improvement:
 
-- 🌐 Additional programming language support
-- 📋 Custom security rule definitions  
-- 🔄 CI/CD pipeline integrations
-- 📁 Batch file processing
-- ⚙️ Configuration file support
-- 🎨 Custom report templates
+- Additional programming language support
+- Custom security rule definitions  
+- CI/CD pipeline integrations
+- Batch file processing
+- Configuration file support
+- Custom report templates
 
 ### How to Contribute
 
@@ -305,17 +305,13 @@ Contributions are welcome! Here are some areas for improvement:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📞 Support
+## Support
 
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/colesmcintosh/vibe-check/issues)
-- 📖 **Documentation**: [GitHub Repository](https://github.com/colesmcintosh/vibe-check)
-- 💬 **Questions**: Open a GitHub Discussion
+- **Bug Reports**: [GitHub Issues](https://github.com/colesmcintosh/vibe-check/issues)
+- **Documentation**: [GitHub Repository](https://github.com/colesmcintosh/vibe-check)
+- **Questions**: Open a GitHub Discussion
 
-## 🏷️ Version History
-
-See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Built with [Claude 4](https://www.anthropic.com/) by Anthropic
 - CLI framework powered by [Click](https://click.palletsprojects.com/)
@@ -323,6 +319,6 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 ---
 
-**Made with ❤️ for secure coding practices**
+**Made with care for secure coding practices**
 
-*Vibe Security AI - Because security shouldn't be an afterthought* 🛡️ 
+*Vibe Security AI - Because security shouldn't be an afterthought* 
