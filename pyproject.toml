@@ -52,7 +52,7 @@ Repository = "https://github.com/colesmcintosh/vibe-check"
 vibe-security-ai = "vibe_security_ai.cli:main"
 
 [tool.setuptools.dynamic]
-version = {attr = "vibe_check.__version__"}
+version = {attr = "vibe_security_ai.__version__"}
 
 [tool.setuptools.packages.find]
-include = ["vibe_check*"] 
+include = ["vibe_security_ai*"] 

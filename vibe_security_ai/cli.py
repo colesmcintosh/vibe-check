@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Vibe Check - A professional CLI tool for security analysis using Claude 4
+Vibe Security AI - A professional CLI tool for security analysis using Claude 4
 """
 
 import os
@@ -158,7 +158,7 @@ def load_api_key() -> str:
     # Prompt user for API key if not found
     console.print("\n[yellow]⚠️  Anthropic API key not found![/yellow]")
     console.print(
-        "You need an API key to use Vibe Check. "
+        "You need an API key to use Vibe Security AI. "
         "Get one at: https://console.anthropic.com/"
     )
 
@@ -266,7 +266,7 @@ def write_report(output_path: Path, input_path: Path, analysis_result: str,
                 f"**Analysis Duration:** "
                 f"{end_time - start_time:.2f} seconds\n"
             )
-            file.write("**Tool:** Vibe Check\n\n")
+            file.write("**Tool:** Vibe Security AI\n\n")
             file.write("---\n\n")
             file.write(analysis_result)
     except OSError as exc:
@@ -310,21 +310,21 @@ def perform_analysis(analyzer: SecurityAnalyzer, input_path: Path) -> tuple[str,
     is_flag=True,
     help='Setup or update your Anthropic API key'
 )
-@click.version_option(prog_name='vibe-check')
+@click.version_option(prog_name='vibe-security-ai')
 def main(file_path: Optional[str], output: Optional[str],
          api_key: Optional[str], setup_key: bool):
     """
-    🔍 VIBE CHECK - Security Analysis Tool
+    🔍 Vibe Security AI - Security Analysis Tool
 
     Analyze code files for security vulnerabilities using Claude 4.
 
     Examples:
-        vibe-check app.py
-        vibe-check src/main.js --output custom_report.md
-        vibe-check --api-key sk-... vulnerable_code.py
+        vibe-security-ai app.py
+        vibe-security-ai src/main.js --output custom_report.md
+        vibe-security-ai --api-key sk-... vulnerable_code.py
     """
     console.print(Panel.fit(
-        "[bold blue]🔍 VIBE CHECK[/bold blue]\n"
+        "[bold blue]🔍 Vibe Security AI[/bold blue]\n"
         "[dim]Security Analysis Tool powered by Claude 4[/dim]",
         border_style="blue"
     ))

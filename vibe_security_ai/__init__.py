@@ -1,5 +1,5 @@
 """
-Vibe Check - A professional CLI tool for security analysis using Claude 4
+Vibe Security AI - A professional CLI tool for security analysis using Claude 4
 """
 
 __version__ = "1.0.1"
