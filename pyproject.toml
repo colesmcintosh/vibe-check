@@ -49,7 +49,7 @@ Repository = "https://github.com/colesmcintosh/vibe-check"
 "Bug Reports" = "https://github.com/colesmcintosh/vibe-check/issues"
 
 [project.scripts]
-vibe-check = "vibe_check.cli:main"
+vibe-security-ai = "vibe_security_ai.cli:main"
 
 [tool.setuptools.dynamic]
 version = {attr = "vibe_check.__version__"}
