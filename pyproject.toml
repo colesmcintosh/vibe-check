@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "vibe-security-ai"
 dynamic = ["version"]
-description = "A professional CLI tool for security analysis using Claude 4"
+description = "🔍 Vibe Security AI - A professional CLI tool for security analysis using Claude 4"
 readme = "README.md"
 license = "MIT"
 authors = [

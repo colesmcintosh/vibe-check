@@ -1,6 +1,6 @@
-# 🔍 Vibe Check - AI-Powered Security Analysis CLI
+# 🔍 Vibe Security AI - AI-Powered Security Analysis CLI
 
-[![PyPI version](https://badge.fury.io/py/vibe-check.svg)](https://badge.fury.io/py/vibe-check)
+[![PyPI version](https://badge.fury.io/py/vibe-security-ai.svg)](https://badge.fury.io/py/vibe-security-ai)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -22,7 +22,7 @@ A professional command-line tool that leverages Claude 4 Sonnet to perform compr
 ### Installation
 
 ```bash
-pip install vibe-check
+pip install vibe-security-ai
 ```
 
 ### Setup
@@ -30,13 +30,13 @@ pip install vibe-check
 Configure your Anthropic API key ([Get one here](https://console.anthropic.com/)):
 
 ```bash
-vibe-check --setup
+vibe-security-ai --setup
 ```
 
 ### Analyze Your Code
 
 ```bash
-vibe-check path/to/your/code.py
+vibe-security-ai path/to/your/code.py
 ```
 
 That's it! Your security report will be generated in the `security_reports/` folder.
@@ -45,7 +45,7 @@ That's it! Your security report will be generated in the `security_reports/` fol
 
 ### Option 1: PyPI (Recommended)
 ```bash
-pip install vibe-check
+pip install vibe-security-ai
 ```
 
 ### Option 2: Development Installation
@@ -63,7 +63,7 @@ Choose your preferred method:
 
 **Interactive Setup (Recommended)**
 ```bash
-vibe-check --setup
+vibe-security-ai --setup
 ```
 
 **Environment Variable**
@@ -82,44 +82,44 @@ echo "ANTHROPIC_API_KEY=your_api_key_here" > .env
 
 ```bash
 # Analyze a file
-vibe-check app.py
+vibe-security-ai app.py
 
 # Custom output location
-vibe-check app.js --output custom_report.md
-vibe-check app.js -o custom_report.md
+vibe-security-ai app.js --output custom_report.md
+vibe-security-ai app.js -o custom_report.md
 
 # Specify API key directly
-vibe-check script.php --api-key sk-your-key-here
+vibe-security-ai script.php --api-key sk-your-key-here
 
 # Get help
-vibe-check --help
+vibe-security-ai --help
 
 # Check version
-vibe-check --version
+vibe-security-ai --version
 ```
 
 ### Real-World Examples
 
 ```bash
 # Web application security audit
-vibe-check src/auth/login.py
+vibe-security-ai src/auth/login.py
 
 # Frontend component analysis
-vibe-check components/UserProfile.tsx
+vibe-security-ai components/UserProfile.tsx
 
 # API endpoint security check
-vibe-check api/routes/users.js
+vibe-security-ai api/routes/users.js
 
 # Database query analysis
-vibe-check models/user.sql
+vibe-security-ai models/user.sql
 
 # Shell script security review
-vibe-check scripts/deploy.sh
+vibe-security-ai scripts/deploy.sh
 ```
 
 ## 🔧 Supported Languages
 
-Vibe Check analyzes these file types:
+Vibe Security AI analyzes these file types:
 
 | Category | Extensions |
 |----------|------------|
@@ -176,7 +176,7 @@ For each finding:
 
 ### Successful Analysis
 ```
-🔍 VIBE CHECK
+🔍 VIBE SECURITY AI
 Security Analysis Tool powered by Claude 4
 
 📁 Analyzing: src/auth/login.py
@@ -197,7 +197,7 @@ Security Analysis Tool powered by Claude 4
 **File Analyzed:** `src/auth/login.py`
 **Analysis Date:** 2024-01-15 14:30:22
 **Analysis Duration:** 2.34 seconds
-**Tool:** Vibe Check
+**Tool:** Vibe Security AI
 
 ---
 
@@ -219,7 +219,7 @@ This analysis identified several critical security vulnerabilities...
 
 | Issue | Solution |
 |-------|----------|
-| **"Anthropic API key not found"** | Run `vibe-check --setup` or set `ANTHROPIC_API_KEY` environment variable |
+| **"Anthropic API key not found"** | Run `vibe-security-ai --setup` or set `ANTHROPIC_API_KEY` environment variable |
 | **"File not found"** | Check file path and permissions |
 | **"API Error"** | Verify internet connection and API key validity |
 | **"Permission denied"** | Check file read permissions and output directory write access |
@@ -228,20 +228,20 @@ This analysis identified several critical security vulnerabilities...
 
 ```bash
 # Show detailed help
-vibe-check --help
+vibe-security-ai --help
 
 # Check version
-vibe-check --version
+vibe-security-ai --version
 
 # Test your setup
-vibe-check --setup
+vibe-security-ai --setup
 ```
 
 ## 🏗️ Development
 
 ### Project Structure
 ```
-vibe-check/
+vibe-security-ai/
 ├── vibe_check/
 │   ├── __init__.py      # Package metadata
 │   └── cli.py           # Main CLI application
@@ -325,4 +325,4 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 **Made with ❤️ for secure coding practices**
 
-*Vibe Check - Because security shouldn't be an afterthought* 🛡️ 
+*Vibe Security AI - Because security shouldn't be an afterthought* 🛡️ 
