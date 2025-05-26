@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-check"
+dynamic = ["version"]
+description = "A professional CLI tool for security analysis using Claude 4"
+readme = "README.md"
+license = "MIT"
+authors = [
+    {name = "Cole McIntosh", email = "colemcintosh6@gmail.com"}
+]
+maintainers = [
+    {name = "Cole McIntosh", email = "colemcintosh6@gmail.com"}
+]
+keywords = [
+    "security", "analysis", "cli", "claude", "ai", "vulnerability", 
+    "scanner", "code-analysis", "static-analysis", "devops", "security-tools"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Topic :: Security",
+    "Topic :: Software Development :: Quality Assurance",
+    "Topic :: Software Development :: Testing",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Environment :: Console",
+    "Natural Language :: English",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "click>=8.1.0,<9.0.0",
+    "anthropic>=0.34.0,<1.0.0", 
+    "rich>=13.0.0,<14.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/colesmcintosh/vibe-check"
+Documentation = "https://github.com/colesmcintosh/vibe-check#readme"
+Repository = "https://github.com/colesmcintosh/vibe-check"
+"Bug Reports" = "https://github.com/colesmcintosh/vibe-check/issues"
+
+[project.scripts]
+vibe-check = "vibe_check.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "vibe_check.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["vibe_check*"] 
